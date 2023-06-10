@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
         return { ...plainPost };
       });
 
-    res.render("home-page", {
+    res.render("homepage", {
       posts,
       logged_in: req.session.logged_in,
     });
@@ -27,7 +27,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get('/post', async (req, res) => {
+router.get('/posts', async (req, res) => {
     try {
         const postData = await Post.findAll({
             include: [

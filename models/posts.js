@@ -11,7 +11,7 @@ Post.init(
             primaryKey: true,
              autoIncrement: true,   
         },
-        username: {
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -36,7 +36,7 @@ Post.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'project',
+        modelName: 'posts',
       }
 )
 
