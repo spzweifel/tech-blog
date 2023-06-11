@@ -1,0 +1,90 @@
+
+header,
+.post:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-link {
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+#logout:hover {
+  background-color: magenta;
+  transform: scale(1.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#create:hover {
+  background-color: #00ff15;
+  transform: scale(1.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.comment-container .border {
+  border-color: rgb(120, 120, 120);
+}
+
+.comment-container p {
+  color: #666;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comment-container button {
+  color: rgb(245, 112, 112);
+  margin-top: 5px;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+}
+
+.comment-container form {
+  margin-top: 20px;
+}
+
+.comment-container textarea {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.comment-container input[type="submit"] {
+  background-color: #55a7ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.comment-container input[type="submit"]:hover {
+  background-color: #58a3f4;
+}

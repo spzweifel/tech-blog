@@ -1,0 +1,73 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+  </head>
+
+  <body>
+    <div class="d-flex flex-column justify-content-between min-vh-100">
+      <header class="p-2" style="background-color: green;">
+        <div class="d-flex align-items-center">
+          <a href="/" class="ml-2" style="display: inline-block;">
+            <h1
+              class="header mb-0"
+              style="display: flex; justify-contents: center; font-size: 64px; color: orange;"
+            >Tech Blog</h1>
+          </a>
+
+        </div>
+      </header>
+      <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="collapse navbar-collapse">
+          <ul
+            class="navbar-nav mr-auto"
+            style="display: flex; list-style: none;"
+          >
+            {{#if logged_in}}
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile">Profile</a>
+              </li>
+            {{else}}
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+            {{/if}}
+            {{#if logged_in}}
+              <li class="nav-item ml-auto">
+                <button class="btn btn-primary" id="logout">Logout</button>
+              </li>
+            {{/if}}
+          </ul>
+        </div>
+      </nav>
+
+      <main class="container-fluid mt-5">
+        <!-- Render the sub layout -->
+        {{{body}}}
+      </main>
+      <footer class="p-2 bg-light">
+
+      </footer>
+    </div>
+
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+
+</html>
