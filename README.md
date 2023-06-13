@@ -17,3 +17,12 @@ The application is deployed on Heroku. No installation required
 Create a profile with the sign up functionality, click on create a post and type what ever thoughts come to mind.
 
 ## Screenshots
+
+![Home View](./assets/Techblog4.png)
+![New Blog Post](./assets/Techblog1.png)
+![Current Posts](./assets/Techblog2.png)
+![Add A Comment](./assets/Techblog3.png)
+
+## Link to Webpage
+
+https://murmuring-everglades-34555.herokuapp.com/
