@@ -12,21 +12,21 @@
   <body>
     <div class="d-flex flex-column justify-content-between min-vh-100">
       <header class="p-2" style="background-color: green;">
-        <div class="d-flex align-items-center">
+        <div class="header">
           <a href="/" class="ml-2" style="display: inline-block;">
             <h1
               class="header mb-0"
-              style="display: flex; justify-contents: center; font-size: 64px; color: orange;"
+              style="font-size: 64px; color: orange;"
             >Tech Blog</h1>
           </a>
 
         </div>
       </header>
-      <nav class="navbar navbar-expand navbar-light bg-light">
+      <nav class="navbar navbar-expand">
         <div class="collapse navbar-collapse">
           <ul
             class="navbar-nav mr-auto"
-            style="display: flex; list-style: none;"
+            style="display: flex; list-style: none; background-color: orange; height: 50px;"
           >
             {{#if logged_in}}
               <li class="nav-item">
@@ -59,9 +59,6 @@
         <!-- Render the sub layout -->
         {{{body}}}
       </main>
-      <footer class="p-2 bg-light">
-
-      </footer>
     </div>
 
     <!-- Render script for logged in users only -->

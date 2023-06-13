@@ -5,20 +5,25 @@ header,
 }
 
 .nav-link {
-  font-size: 30px;
+  font-size: 20px;
   margin-right: 20px;
+  color: black;
 }
 
 #logout:hover {
-  background-color: magenta;
+  background-color: green;
   transform: scale(1.1);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #create:hover {
-  background-color: #00ff15;
+  background-color: orange;
   transform: scale(1.1);
   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#create {
+  background-color: green;
 }
 
 .no-button {
@@ -69,15 +74,16 @@ header,
 .comment-container textarea {
   background-color: #f7f7f7;
   border: 1px solid #ccc;
-  width: 100%;
+  width: 200%;
   height: 100px;
   padding: 10px;
   font-size: 14px;
   margin-bottom: 5px;
+  margin-left: -70px;
 }
 
 .comment-container input[type="submit"] {
-  background-color: #55a7ff;
+  background-color: green;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -88,3 +94,14 @@ header,
 .comment-container input[type="submit"]:hover {
   background-color: #58a3f4;
 }
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.discussion {
+  display: flex;
+  justify-content: center;
+}
+
